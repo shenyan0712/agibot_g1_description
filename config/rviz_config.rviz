@@ -1,0 +1,405 @@
+Panels:
+  - Class: rviz_common/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /Status1
+        - /RobotModel1/Description Topic1
+        - /TF1
+      Splitter Ratio: 0.5
+    Tree Height: 486
+  - Class: rviz_common/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz_common/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: ""
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.029999999329447746
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 10
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Alpha: 1
+      Class: rviz_default_plugins/RobotModel
+      Collision Enabled: false
+      Description File: ""
+      Description Source: Topic
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
+      Enabled: true
+      Links:
+        All Links Enabled: true
+        Expand Joint Details: false
+        Expand Link Details: false
+        Expand Tree: false
+        Link Tree Style: Links in Alphabetic Order
+        arm_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        arm_l_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_l_end_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_l_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_l_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_l_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_l_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_l_link5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_l_link6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_r_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_r_end_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_r_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_r_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_r_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_r_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_r_link5:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        arm_r_link6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        body_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        body_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_l_base_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_l_center_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        gripper_l_inner_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_l_inner_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_l_inner_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_l_inner_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_l_outer_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_l_outer_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_l_outer_link3:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        gripper_l_outer_link4:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_link1:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        head_link2:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        world:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+      Mass Properties:
+        Inertia: false
+        Mass: false
+      Name: RobotModel
+      TF Prefix: ""
+      Update Interval: 0
+      Value: true
+      Visual Enabled: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        arm_base_link:
+          Value: true
+        arm_l_base_link:
+          Value: true
+        arm_l_end_link:
+          Value: true
+        arm_l_link1:
+          Value: true
+        arm_l_link2:
+          Value: true
+        arm_l_link3:
+          Value: true
+        arm_l_link4:
+          Value: true
+        arm_l_link5:
+          Value: true
+        arm_l_link6:
+          Value: true
+        arm_r_base_link:
+          Value: true
+        arm_r_end_link:
+          Value: true
+        arm_r_link1:
+          Value: true
+        arm_r_link2:
+          Value: true
+        arm_r_link3:
+          Value: true
+        arm_r_link4:
+          Value: true
+        arm_r_link5:
+          Value: true
+        arm_r_link6:
+          Value: true
+        base_link:
+          Value: true
+        body_link1:
+          Value: true
+        body_link2:
+          Value: true
+        gripper_l_base_link:
+          Value: true
+        gripper_l_center_link:
+          Value: true
+        gripper_l_inner_link1:
+          Value: true
+        gripper_l_inner_link2:
+          Value: true
+        gripper_l_inner_link3:
+          Value: true
+        gripper_l_inner_link4:
+          Value: true
+        gripper_l_outer_link1:
+          Value: true
+        gripper_l_outer_link2:
+          Value: true
+        gripper_l_outer_link3:
+          Value: true
+        gripper_l_outer_link4:
+          Value: true
+        head_link1:
+          Value: true
+        head_link2:
+          Value: true
+        world:
+          Value: true
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        world:
+          base_link:
+            body_link1:
+              body_link2:
+                arm_base_link:
+                  arm_l_base_link:
+                    arm_l_link1:
+                      arm_l_link2:
+                        arm_l_link3:
+                          arm_l_link4:
+                            arm_l_link5:
+                              arm_l_link6:
+                                arm_l_end_link:
+                                  gripper_l_base_link:
+                                    gripper_l_center_link:
+                                      {}
+                                    gripper_l_inner_link1:
+                                      gripper_l_inner_link3:
+                                        gripper_l_inner_link4:
+                                          {}
+                                    gripper_l_inner_link2:
+                                      {}
+                                    gripper_l_outer_link1:
+                                      gripper_l_outer_link3:
+                                        gripper_l_outer_link4:
+                                          {}
+                                    gripper_l_outer_link2:
+                                      {}
+                  arm_r_base_link:
+                    arm_r_link1:
+                      arm_r_link2:
+                        arm_r_link3:
+                          arm_r_link4:
+                            arm_r_link5:
+                              arm_r_link6:
+                                arm_r_end_link:
+                                  {}
+                head_link1:
+                  head_link2:
+                    {}
+      Update Interval: 0
+      Value: true
+  Enabled: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: base_link
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 3.0840461254119873
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0.20000000298023224
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505806
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.009999999776482582
+      Pitch: 0.6549999713897705
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz_default_plugins)
+      Yaw: 0.6208000183105469
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 968
+  Hide Left Dock: false
+  Hide Right Dock: false
+  QMainWindow State: 000000ff00000000fd0000000100000000000002fb0000036efc0200000003fb000000100044006900730070006c006100790073010000003d00000223000000c900fffffffb0000000a005600690065007700730100000266000000ca000000a400fffffffb0000000800540069006d00650100000336000000750000003900ffffff000004390000036e00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Time:
+    collapsed: false
+  Views:
+    collapsed: false
+  Width: 1850
+  X: 70
+  Y: 27

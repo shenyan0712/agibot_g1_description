@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <xacro:macro name="create_right_omnipicker" params="parent_link" >
+
+    <link name="gripper_right_base_link">
+        <inertial>
+        <origin rpy="0 0 0" xyz="-0.00013356 1.5301E-05 0.03322"/>
+        <mass value="0.23588"/>
+        <inertia ixx="8.1548E-05" ixy="-1.2617E-08" ixz="-2.05E-07" iyy="5.6921E-05" iyz="6.6903E-08" izz="7.1611E-05"/>
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/gripper_base_link.fbx"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/gripper_base_link.fbx"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="gripper_right_little_knuckle_link">
+        <inertial>
+        <origin rpy="0 0 0" xyz="0.0094685 0.0068806 6.5437E-05"/>
+        <mass value="0.025428"/>
+        <inertia ixx="1.9574E-06" ixy="-4.2911E-07" ixz="-3.7111E-11" iyy="2.3919E-06" iyz="-3.008E-10" izz="1.5501E-06"/>
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/inner_link1.fbx"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/inner_link1.fbx"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="gripper_right_little_finger_link">
+        <inertial>
+        <origin rpy="0 0 0" xyz="0.0088027 -0.007035 1.6424E-05"/>
+        <mass value="0.0040132"/>
+        <inertia ixx="1.0307E-07" ixy="5.7851E-08" ixz="9.5801E-11" iyy="1.1385E-07" iyz="-2.81E-11" izz="1.7009E-07"/>
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/inner_link3.fbx"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/inner_link3.fbx"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="gripper_right_little_fingertip_link">
+        <inertial>
+        <origin rpy="0 0 0" xyz="0.012508 -0.0079729 9.4339E-05"/>
+        <mass value="0.018029"/>
+        <inertia ixx="1.1403E-06" ixy="5.5159E-07" ixz="-4.0096E-13" iyy="2.5704E-06" iyz="1.0951E-12" izz="2.3252E-06"/>
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/inner_link4.fbx"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/inner_link4.fbx"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="gripper_right_little_inner_knuckle_link">
+        <inertial>
+        <origin rpy="0 0 0" xyz="0.014869 -0.0036066 0.00029307"/>
+        <mass value="0.022591"/>
+        <inertia ixx="4.3916E-06" ixy="1.114E-07" ixz="-4.9655E-12" iyy="4.737E-06" iyz="1.7121E-11" izz="6.0445E-07"/>
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/inner_link2.fbx"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/inner_link2.fbx"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="gripper_right_big_knuckle_link">
+        <inertial>
+        <origin rpy="0 0 0" xyz="0.0095051 -0.0068479 6.8268E-05"/>
+        <mass value="0.025428"/>
+        <inertia ixx="1.9565E-06" ixy="4.2798E-07" ixz="2.3844E-10" iyy="2.3928E-06" iyz="-1.4454E-10" izz="1.5501E-06"/>
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/outer_link1.fbx"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/outer_link1.fbx"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="gripper_right_big_finger_link">
+        <inertial>
+        <origin rpy="0 0 0" xyz="0.0088027 0.007035 -1.6424E-05"/>
+        <mass value="0.0040132"/>
+        <inertia ixx="1.0307E-07" ixy="-5.7851E-08" ixz="-9.58E-11" iyy="1.1385E-07" iyz="-2.81E-11" izz="1.7009E-07"/>
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/outer_link3.fbx"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/outer_link3.fbx"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="gripper_right_big_fingertip_link">
+        <inertial>
+        <origin rpy="0 0 0" xyz="0.016206 0.0094593 4.7668E-05"/>
+        <mass value="0.035835"/>
+        <inertia ixx="8.5056E-06" ixy="-1.1363E-06" ixz="-4.2908E-11" iyy="1.1235E-05" iyz="-2.9251E-11" izz="4.6309E-06"/>
+        </inertial>
+        <visual>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/outer_link4.fbx"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin rpy="0 0 0" xyz="0 0 0"/>
+            <geometry>
+                <mesh filename="package://${pkg_name}/urdf/g1/meshes/outer_link4.fbx"/>
+            </geometry>
+        </collision>
+    </link>
+  <link name="gripper_right_big_inner_knuckle_link">
+    <inertial>
+      <origin rpy="0 0 0" xyz="0.016268 0.0040555 0.00030323"/>
+      <mass value="0.025142"/>
+      <inertia ixx="5.887E-06" ixy="-1.1234E-07" ixz="2.1954E-11" iyy="6.236E-06" iyz="-9.473E-12" izz="6.2389E-07"/>
+    </inertial>
+    <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <mesh filename="package://${pkg_name}/urdf/g1/meshes/outer_link2.fbx"/>
+        </geometry>
+    </visual>
+    <collision>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+            <mesh filename="package://${pkg_name}/urdf/g1/meshes/outer_link2.fbx"/>
+        </geometry>
+    </collision>
+  </link>
+
+    <link name="gripper_right_center_link" />
+
+    <!-- Gripper Connector -->
+    <joint name="gripper_ee_right_joint" type="fixed">
+        <origin rpy="0 0 -1.5707963267948966" xyz="0 0 0"/>
+        <parent link="${parent_link}"/>
+        <child link="gripper_right_base_link"/>
+        <axis xyz="0 0 0"/>
+    </joint>
+    <joint name="gripper_right_center_joint" type="fixed">
+        <origin rpy="0 0 -1.5707963267948966" xyz="0.0 0.0 0.14308"/>
+        <parent link="gripper_right_base_link"/>
+        <child link="gripper_right_center_link"/>
+    </joint>
+
+    <!-- Gripper joints -->
+   <joint name="gripper_right_big_knuckle_joint" type="revolute">
+        <origin rpy="-2.9951 -1.5707963267948966 -0.15964" xyz="0 0.0195 0.0565"/>
+        <parent link="gripper_right_base_link"/>
+        <child link="gripper_right_big_knuckle_link"/>
+        <axis xyz="0 0 -1"/>
+        <limit effort="10" lower="0" upper="0.7853981633974483" velocity="10"/>
+    </joint>
+    <joint name="gripper_right_big_finger_joint" type="fixed">
+        <origin rpy="0 0 0" xyz="0.030852 -0.018551 0"/>
+        <parent link="gripper_right_big_knuckle_link"/>
+        <child link="gripper_right_big_finger_link"/>
+        <axis xyz="0 0 -1"/>
+        <limit effort="10" lower="-2" upper="2" velocity="10"/>
+    </joint>
+    <joint name="gripper_right_big_fingertip_joint" type="fixed">
+        <origin rpy="0 0 0" xyz="0.018118 0.01574 0"/>
+        <parent link="gripper_right_big_finger_link"/>
+        <child link="gripper_right_big_fingertip_link"/>
+        <axis xyz="0 0 -1"/>
+        <limit effort="10" lower="-2" upper="2" velocity="10"/>
+    </joint>
+    <joint name="gripper_right_big_inner_knuckle_joint" type="continuous">
+        <origin rpy="-2.9951 -1.5707963267948966 -0.15964" xyz="0 0.021633 0.07387"/>
+        <parent link="gripper_right_base_link"/>
+        <child link="gripper_right_big_inner_knuckle_link"/>
+        <axis xyz="0 0 -1"/>
+        <limit effort="10" lower="-2" upper="2" velocity="10"/>
+        <mimic joint="gripper_right_big_knuckle_joint" multiplier="1.553" offset="0"/>
+    </joint>
+
+    <joint name="gripper_right_little_knuckle_joint" type="revolute">
+        <origin rpy="-2.9951 -1.5707963267948966 -0.15964" xyz="0 -0.0195 0.0565"/>
+        <parent link="gripper_right_base_link"/>
+        <child link="gripper_right_little_knuckle_link"/>
+        <axis xyz="0 0 -1"/>
+        <limit effort="10" lower="-0.7853981633974483" upper="0" velocity="10"/>
+        <mimic joint="gripper_right_big_knuckle_joint" multiplier="-1" offset="0"/>
+    </joint>
+    <joint name="gripper_right_little_finger_joint" type="fixed">
+        <origin rpy="0 0 0" xyz="0.030852 0.018551 0"/>
+        <parent link="gripper_right_little_knuckle_link"/>
+        <child link="gripper_right_little_finger_link"/>
+        <axis xyz="0 0 -1"/>
+        <limit effort="10" lower="-2" upper="2" velocity="10"/>
+    </joint>
+    <joint name="gripper_right_little_fingertip_joint" type="fixed">
+        <origin rpy="0 0 0" xyz="0.018118 -0.01574 0"/>
+        <parent link="gripper_right_little_finger_link"/>
+        <child link="gripper_right_little_fingertip_link"/>
+        <axis xyz="0 0 -1"/>
+        <limit effort="10" lower="-2" upper="2" velocity="10"/>
+    </joint>
+    <joint name="gripper_right_little_inner_knuckle_joint" type="continuous">
+        <origin rpy="-2.9951 -1.5707963267948966 -0.15964" xyz="0 -0.021633 0.07387"/>
+        <parent link="gripper_right_base_link"/>
+        <child link="gripper_right_little_inner_knuckle_link"/>
+        <axis xyz="0 0 -1"/>
+        <limit effort="10" lower="-2" upper="2" velocity="10"/>
+        <mimic joint="gripper_right_big_knuckle_joint" multiplier="-1.553" offset="0"/>
+    </joint>
+ 
+
+</xacro:macro>
+</robot>
+
